@@ -1,0 +1,15 @@
+server:
+  port: 8080
+
+spring:
+  jpa:
+    properties:
+      hibernate.format_sql: true
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:postgresql://localhost:5432/examdb
+    username: postgres
+    password: root
+    driver-class-name: org.postgresql.Driver
